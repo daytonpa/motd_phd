@@ -1,0 +1,7 @@
+DEPENDENCIES
+  motd_phd
+    path: .
+    metadata: true
+
+GRAPH
+  motd_phd (0.1.0)

@@ -1,0 +1,10 @@
+By default, this message will describe your node's 'hostname', 'cpu count' and
+'memory total', and 'fully qualified domain name'.  To customize this message,
+delete this message and enter your own personal message here.
+
+Your default company name is <%= node['motd_phd']['company'] %>
+
+  HOST: <%= node['hostname'] %> FQDN: <%= node['fqdn'] %>
+  Memory: <%= node['memory']['total'] %> CPU Count: <%= node['cpu']['total'] %>
+
+Have a lovely day! :)

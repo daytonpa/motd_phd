@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |c|
+  c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+  c.vm.box = "CentOS-7"
+  c.vm.hostname = "default-CentOS-7"
+    c.ssh.username = "root"
+    c.ssh.password = "Test123!"
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.provider :vmware_fusion do |p|
+    p.gui = true
+  end
+end

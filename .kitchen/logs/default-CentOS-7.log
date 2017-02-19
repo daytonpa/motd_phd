@@ -1,0 +1,76 @@
+I, [2016-10-28T10:14:26.080963 #23220]  INFO -- default-CentOS-7: -----> Creating <default-CentOS-7>...
+I, [2016-10-28T10:14:27.970894 #23220]  INFO -- default-CentOS-7: The provider 'vmware_fusion' could not be found, but was requested to
+I, [2016-10-28T10:14:27.971007 #23220]  INFO -- default-CentOS-7: back the machine 'default'. Please use a provider that exists.
+E, [2016-10-28T10:14:28.036490 #23220] ERROR -- default-CentOS-7: Create failed on instance <default-CentOS-7>.
+E, [2016-10-28T10:14:28.036708 #23220] ERROR -- default-CentOS-7: ------Exception-------
+E, [2016-10-28T10:14:28.036737 #23220] ERROR -- default-CentOS-7: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2016-10-28T10:14:28.036762 #23220] ERROR -- default-CentOS-7: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --provider vmware_fusion ----
+STDOUT: 
+STDERR: The provider 'vmware_fusion' could not be found, but was requested to
+back the machine 'default'. Please use a provider that exists.
+---- End output of vagrant up --provider vmware_fusion ----
+Ran vagrant up --provider vmware_fusion returned 1
+E, [2016-10-28T10:14:28.036788 #23220] ERROR -- default-CentOS-7: ----------------------
+E, [2016-10-28T10:14:28.036812 #23220] ERROR -- default-CentOS-7: ------Backtrace-------
+E, [2016-10-28T10:14:28.036836 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-10-28T10:14:28.036864 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-10-28T10:14:28.036892 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:343:in `run_command'
+E, [2016-10-28T10:14:28.036919 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:302:in `run'
+E, [2016-10-28T10:14:28.036944 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:373:in `run_vagrant_up'
+E, [2016-10-28T10:14:28.036972 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-10-28T10:14:28.036997 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-10-28T10:14:28.037023 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-10-28T10:14:28.037048 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:510:in `call'
+E, [2016-10-28T10:14:28.037173 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2016-10-28T10:14:28.037198 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2016-10-28T10:14:28.037222 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2016-10-28T10:14:28.037247 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-10-28T10:14:28.037271 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-10-28T10:14:28.037296 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:477:in `action'
+E, [2016-10-28T10:14:28.037320 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-10-28T10:14:28.037372 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-10-28T10:14:28.037398 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-10-28T10:14:28.037422 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `each'
+E, [2016-10-28T10:14:28.037446 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-10-28T10:14:28.037471 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-10-28T10:14:28.037498 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-10-28T10:14:28.037530 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-10-28T10:14:28.037559 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-10-28T10:14:28.037586 #23220] ERROR -- default-CentOS-7: ----End Backtrace-----
+E, [2016-10-28T10:14:28.037610 #23220] ERROR -- default-CentOS-7: ---Nested Exception---
+E, [2016-10-28T10:14:28.037633 #23220] ERROR -- default-CentOS-7: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2016-10-28T10:14:28.037660 #23220] ERROR -- default-CentOS-7: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --provider vmware_fusion ----
+STDOUT: 
+STDERR: The provider 'vmware_fusion' could not be found, but was requested to
+back the machine 'default'. Please use a provider that exists.
+---- End output of vagrant up --provider vmware_fusion ----
+Ran vagrant up --provider vmware_fusion returned 1
+E, [2016-10-28T10:14:28.037685 #23220] ERROR -- default-CentOS-7: ----------------------
+E, [2016-10-28T10:14:28.037712 #23220] ERROR -- default-CentOS-7: ------Backtrace-------
+E, [2016-10-28T10:14:28.037737 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-10-28T10:14:28.037846 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-10-28T10:14:28.037876 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:343:in `run_command'
+E, [2016-10-28T10:14:28.037905 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:302:in `run'
+E, [2016-10-28T10:14:28.037933 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:373:in `run_vagrant_up'
+E, [2016-10-28T10:14:28.037961 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-10-28T10:14:28.037988 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-10-28T10:14:28.038015 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-10-28T10:14:28.038043 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:510:in `call'
+E, [2016-10-28T10:14:28.038071 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2016-10-28T10:14:28.038107 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2016-10-28T10:14:28.038137 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2016-10-28T10:14:28.038162 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-10-28T10:14:28.038189 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-10-28T10:14:28.038217 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:477:in `action'
+E, [2016-10-28T10:14:28.038244 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-10-28T10:14:28.038273 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-10-28T10:14:28.038301 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-10-28T10:14:28.038328 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `each'
+E, [2016-10-28T10:14:28.038356 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-10-28T10:14:28.038445 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-10-28T10:14:28.038470 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-10-28T10:14:28.038494 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-10-28T10:14:28.038519 #23220] ERROR -- default-CentOS-7: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-10-28T10:14:28.038546 #23220] ERROR -- default-CentOS-7: ----End Backtrace-----

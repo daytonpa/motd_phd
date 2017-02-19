@@ -1,0 +1,27 @@
+driver:
+  name: vagrant
+provisioner:
+  name: chef_solo
+#  data_bags_path: test/fixtures/data_bags
+#  clients_path: test/fixtures/clients
+#  nodes_path: test/fixtures/nodes
+#  environments_path: test/fixtures/environments
+#  role_path: test/fixtures/roles
+platforms:
+  - name: 'CentOS-7'
+    transport:
+    driver:
+      provision: true
+#      vagrantfiles:
+#         - vagrant.rb
+      username: 'root'
+      password: 'Test123!'
+      provider: 'vmware_fusion'
+      gui: true
+suites:
+  - name: default
+    run_list:
+      - recipe[fanatics-motd]
+    attributes: 
+
+
